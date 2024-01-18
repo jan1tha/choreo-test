@@ -12,7 +12,7 @@ public class TestController {
     @GetMapping("/jwks")
     ResponseEntity<String> test(){
 
-        return ResponseEntity.status(HttpStatus.OK)
+        return ResponseEntity.status(200)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(testText());
     }
